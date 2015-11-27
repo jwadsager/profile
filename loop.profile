@@ -46,28 +46,48 @@ function loop_module_selection_form($form, &$form_state) {
     '#collapsed' => FALSE,
   );
 
-  $form['addons']['dashboard'] = array(
-    '#type' => 'checkbox',
-    '#title' => t('Admin dashboard'),
-    '#description' => t('Include admin dashboard.'),
-    '#default_value' => FALSE,
-    '#weight' => 1,
-  );
-
   $form['addons']['user_pages'] = array(
     '#type' => 'checkbox',
     '#title' => t('User pages'),
     '#description' => t('Include user display and user sub pages.'),
-    '#default_value' => FALSE,
-    '#weight' => 10,
+    '#default_value' => TRUE,
   );
+
+  $all_modules = system_rebuild_module_data();
+  $loop_modules = array(
+    'loop_dashboard' => TRUE,
+    'loop_configure_theme' => TRUE,
+    // 'loop_example_content' => FALSE,
+    'loop_external_data' => TRUE,
+    'loop_external_sources_content' => TRUE,
+    'loop_friend_notification' => TRUE,
+    'loop_instruction' => TRUE,
+    // 'loop_notification' => TRUE,
+    'loop_post_wysiwyg' => FALSE,
+    'loop_profession_optional' => TRUE,
+    // 'loop_saml' => FALSE,
+    // 'loop_simplesamlphp' => FALSE,
+    'loop_taxonomy_terms' => TRUE,
+    'loop_user_messages' => TRUE,
+    'loop_user_subscriptions' => TRUE,
+  );
+  foreach ($loop_modules as $module => $install) {
+    if (isset($all_modules[$module])) {
+      $module_info = $all_modules[$module]->info;
+      $form['addons'][$module] = array(
+        '#type' => 'checkbox',
+        '#title' => $module_info['name'],
+        '#description' => $module_info['description'],
+        '#default_value' => $install,
+      );
+    }
+  }
 
   $form['addons']['translation'] = array(
     '#type' => 'checkbox',
     '#title' => t('Danish translation'),
     '#description' => t('Install and enable Danish translation.'),
     '#default_value' => FALSE,
-    '#weight' => 11,
   );
 
   $form['submit'] = array(
@@ -89,8 +109,11 @@ function loop_module_selection_form_submit($form, &$form_state) {
     variable_set('loop_install_translations', TRUE);
   }
 
-  if ($form_state['values']['dashboard']) {
-    $dependency_modules[] = 'loop_dashboard';
+  $all_modules = system_rebuild_module_data();
+  foreach ($form_state['values'] as $module => $install) {
+    if (isset($all_modules[$module]) && $install) {
+      $dependency_modules[] = $module;
+    }
   }
 
   if ($form_state['values']['user_pages']) {
@@ -98,6 +121,7 @@ function loop_module_selection_form_submit($form, &$form_state) {
     $dependency_modules[] = 'loop_user_related_content_profession';
     $dependency_modules[] = 'loop_user_related_content_competence';
   }
+  set_time_limit(0);
   module_enable($dependency_modules);
 }
 
