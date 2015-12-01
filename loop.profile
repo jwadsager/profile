@@ -54,20 +54,18 @@ function loop_module_selection_form($form, &$form_state) {
   );
 
   $all_modules = system_rebuild_module_data();
+  // Optional Loop modules to suggest installing
+  //   module name => install (default checkbox value)
   $loop_modules = array(
     'loop_dashboard' => TRUE,
     'loop_configure_theme' => TRUE,
-    // 'loop_example_content' => FALSE,
     'loop_external_data' => TRUE,
     'loop_external_sources_content' => TRUE,
     'loop_friend_notification' => TRUE,
     'loop_instruction' => TRUE,
-    // 'loop_notification' => TRUE,
     'loop_post_wysiwyg' => FALSE,
     'loop_profession_optional' => TRUE,
-    // 'loop_saml' => FALSE,
-    // 'loop_simplesamlphp' => FALSE,
-    'loop_taxonomy_terms' => TRUE,
+    'loop_taxonomy_terms' => FALSE,
     'loop_user_messages' => TRUE,
     'loop_user_subscriptions' => TRUE,
   );
