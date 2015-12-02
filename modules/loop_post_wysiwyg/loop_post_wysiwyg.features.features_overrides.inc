@@ -11,7 +11,7 @@ function loop_post_wysiwyg_features_override_default_overrides() {
   // This code is only used for UI in features. Exported alters hooks do the magic.
   $overrides = array();
 
-  // Exported overrides for: field_instance
+  // Exported overrides for: field_instance.
   $overrides["field_instance.comment-comment_node_post-comment_body.settings|better_formats|allowed_formats|editor"] = 'editor';
   $overrides["field_instance.comment-comment_node_post-comment_body.settings|better_formats|allowed_formats|html"] = 0;
   $overrides["field_instance.comment-comment_node_post-comment_body.settings|better_formats|allowed_formats|simple"] = 0;
@@ -44,7 +44,7 @@ function loop_post_wysiwyg_features_override_default_overrides() {
   );
   $overrides["field_instance.node-post-field_file_upload.widget|settings|insert_width"] = '';
 
-  // Exported overrides for: views_view
+  // Exported overrides for: views_view.
   $overrides["views_view.loop_node_comments.display|default|display_options|arguments|nid|exception"] = array(
     'title' => 'Alle',
   );
@@ -64,5 +64,5 @@ function loop_post_wysiwyg_features_override_default_overrides() {
   );
   $overrides["views_view.loop_node_comments.display|default|display_options|title"] = 'Kommentar til indhold';
 
- return $overrides;
+  return $overrides;
 }
