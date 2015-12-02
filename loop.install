@@ -12,7 +12,7 @@
  * Setup "Page not found" and "Access denied" pages.
  *
  * @see system_install()
-*/
+ */
 function loop_install() {
   // Set default variables.
   $default_theme = 'loop';

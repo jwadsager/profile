@@ -5,7 +5,7 @@
  */
 
 /**
- * Implement hook_install_tasks_alter().
+ * Implements hook_install_tasks_alter().
  *
  * Redirect language selection to our own function.
  */
@@ -14,7 +14,9 @@ function loop_install_tasks_alter(&$tasks, $install_state) {
   $tasks['install_select_locale']['function'] = 'loop_locale_selection';
 }
 
-// Set default language to english.
+/**
+ * Sets default language to english.
+ */
 function loop_locale_selection(&$install_state) {
   $install_state['parameters']['locale'] = 'en';
 }
@@ -136,7 +138,7 @@ function loop_install_tasks(&$install_state) {
       'display_name' => st('Setup filter and WYSIWYG'),
       'display' => TRUE,
       'run' => INSTALL_TASK_RUN_IF_NOT_COMPLETED,
-      'type' => 'batch'
+      'type' => 'batch',
     ),
     // Round up installation.
     'loop_final_settings' => array(
@@ -144,7 +146,7 @@ function loop_install_tasks(&$install_state) {
       'display' => TRUE,
       'run' => INSTALL_TASK_RUN_IF_NOT_COMPLETED,
       'type' => 'normal',
-    )
+    ),
   );
 
   return $ret;
@@ -154,7 +156,7 @@ function loop_install_tasks(&$install_state) {
  * Translation callback.
  *
  * Add danish language and import for every module.
-
+ *
  * @return array
  *   List of batches.
  */
@@ -271,9 +273,9 @@ function loop_setup_filter_and_wysiwyg() {
       'status' => 1,
       'settings' => array(
         'shortener_url_behavior' => 'strict',
-        'shortener_url_length' => '72'
-      )
-    )
+        'shortener_url_length' => 72,
+      ),
+    ),
   );
 
   filter_format_save($format);
@@ -355,9 +357,9 @@ function loop_setup_filter_and_wysiwyg() {
       'status' => 1,
       'settings' => array(
         'shortener_url_behavior' => 'strict',
-        'shortener_url_length" => "72'
-      )
-    )
+        'shortener_url_length' => 72,
+      ),
+    ),
   );
 
   filter_format_save($format);
