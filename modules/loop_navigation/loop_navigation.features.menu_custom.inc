@@ -33,6 +33,5 @@ function loop_navigation_menu_default_menu_custom() {
   t('Primary menu with support for smaller screen and touch devices. Works as a submenu to Main Menu');
   t('The <em>Management</em> menu contains links for administrative tasks.');
 
-
   return $menus;
 }

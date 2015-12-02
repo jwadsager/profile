@@ -10,7 +10,7 @@
 function loop_navigation_menu_default_menu_links() {
   $menu_links = array();
 
-  // Exported menu link: management_administration:admin
+  // Exported menu link: management_administration:admin.
   $menu_links['management_administration:admin'] = array(
     'menu_name' => 'management',
     'link_path' => 'admin',
@@ -30,7 +30,7 @@ function loop_navigation_menu_default_menu_links() {
     'weight' => 9,
     'customized' => 1,
   );
-  // Exported menu link: management_overview:admin/index
+  // Exported menu link: management_overview:admin/index.
   $menu_links['management_overview:admin/index'] = array(
     'menu_name' => 'management',
     'link_path' => 'admin/index',
