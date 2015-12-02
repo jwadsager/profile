@@ -10,7 +10,7 @@
 function loop_external_data_field_default_field_bases() {
   $field_bases = array();
 
-  // Exported field_base: 'field_leaf'
+  // Exported field_base: 'field_leaf'.
   $field_bases['field_leaf'] = array(
     'active' => 1,
     'cardinality' => -1,
@@ -57,7 +57,7 @@ function loop_external_data_field_default_field_bases() {
     'type' => 'entityreference',
   );
 
-  // Exported field_base: 'field_tree'
+  // Exported field_base: 'field_tree'.
   $field_bases['field_tree'] = array(
     'active' => 1,
     'cardinality' => -1,

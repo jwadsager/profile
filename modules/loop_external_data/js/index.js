@@ -1,3 +1,6 @@
+/**
+ * @file
+ */
 (function ($) {
   $(document).ready(function() {
     $('.guide--nav-wrapper li li').toggle();

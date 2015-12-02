@@ -5,7 +5,7 @@
  */
 
 /**
- * Class LoopNode
+ * Class LoopNode.
  *
  * Represents a node of external data.
  */
@@ -31,4 +31,5 @@ class LoopNode {
   public function getTitle() {
     return $this->title;
   }
+
 }

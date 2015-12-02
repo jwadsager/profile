@@ -5,7 +5,7 @@
  */
 
 /**
- * Class Tree
+ * Class Tree.
  *
  * Represents a tree in external data.
  */
@@ -34,4 +34,5 @@ class Tree extends LoopNode {
   public function getChildren() {
     return $this->children;
   }
+
 }

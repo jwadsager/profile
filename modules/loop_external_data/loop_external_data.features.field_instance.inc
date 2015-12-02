@@ -10,7 +10,7 @@
 function loop_external_data_field_default_field_instances() {
   $field_instances = array();
 
-  // Exported field_instance: 'node-index-field_file'
+  // Exported field_instance: 'node-index-field_file'.
   $field_instances['node-index-field_file'] = array(
     'bundle' => 'index',
     'deleted' => 0,
@@ -52,7 +52,7 @@ function loop_external_data_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-index-field_tree'
+  // Exported field_instance: 'node-index-field_tree'.
   $field_instances['node-index-field_tree'] = array(
     'bundle' => 'index',
     'default_value' => NULL,
@@ -91,7 +91,7 @@ function loop_external_data_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-leaf-body'
+  // Exported field_instance: 'node-leaf-body'.
   $field_instances['node-leaf-body'] = array(
     'bundle' => 'leaf',
     'default_value' => NULL,
@@ -135,7 +135,7 @@ function loop_external_data_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-tree-field_leaf'
+  // Exported field_instance: 'node-tree-field_leaf'.
   $field_instances['node-tree-field_leaf'] = array(
     'bundle' => 'tree',
     'default_value' => NULL,

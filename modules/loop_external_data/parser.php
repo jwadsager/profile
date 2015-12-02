@@ -5,12 +5,12 @@
  */
 
 /**
- * Class NoParserFoundException
+ * Class NoParserFoundException.
  */
 class NoParserFoundException extends Exception {}
 
 /**
- * Class Parser
+ * Class Parser.
  *
  * Standard parser class. Selects relevant parser when calling parse().
  */
@@ -137,4 +137,5 @@ class Parser {
     }
     return $parser;
   }
+
 }

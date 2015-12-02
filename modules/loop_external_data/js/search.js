@@ -1,3 +1,6 @@
+/**
+ * @file
+ */
 var LoopSearch = LoopSearch || [];
 jQuery(document).ready(function($) {
 

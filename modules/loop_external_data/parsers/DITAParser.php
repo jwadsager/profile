@@ -5,7 +5,7 @@
  */
 
 /**
- * Class DITAParser
+ * Class DITAParser.
  *
  * For passing a DITA folder.
  */
@@ -137,7 +137,7 @@ class DITAParser implements ParserInterface {
       // Replace conrefs
       // From these cases:
       // http://docs.oasis-open.org/dita/v1.1/OS/langspec/common/theconrefattribute.html
-      // Only implemented "Using conref to refer to an element within a topic"
+      // Only implemented "Using conref to refer to an element within a topic".
       foreach ($xpath->query('//*[@conref]') as $conref_element) {
         $conref = $conref_element->getAttribute('conref');
         $conref_split = explode('#', $conref);
@@ -407,4 +407,5 @@ class DITAParser implements ParserInterface {
     }
     return FALSE;
   }
+
 }

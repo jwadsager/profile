@@ -5,7 +5,7 @@
  */
 
 /**
- * Interface iParser
+ * Interface iParser.
  *
  * Specifies the functions a Parser must contain.
  */
@@ -30,4 +30,5 @@ interface ParserInterface {
    *   The nid of the Index node in Drupal.
    */
   public function process($path_to_directory, $index_node_id);
+
 }
