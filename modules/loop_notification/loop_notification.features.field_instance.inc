@@ -10,7 +10,7 @@
 function loop_notification_field_default_field_instances() {
   $field_instances = array();
 
-  // Exported field_instance: 'message-comment_added_to_post-field_message_node_reference'
+  // Exported field_instance: 'message-comment_added_to_post-field_message_node_reference'.
   $field_instances['message-comment_added_to_post-field_message_node_reference'] = array(
     'bundle' => 'comment_added_to_post',
     'default_value' => NULL,
@@ -59,7 +59,7 @@ function loop_notification_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'message_type-message_type-message_text'
+  // Exported field_instance: 'message_type-message_type-message_text'.
   $field_instances['message_type-message_type-message_text'] = array(
     'bundle' => 'message_type',
     'default_value' => NULL,
