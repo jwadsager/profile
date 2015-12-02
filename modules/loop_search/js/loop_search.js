@@ -82,4 +82,3 @@ jQuery(document).ready(function($) {
     return a.hostname;
   }
 });
-
