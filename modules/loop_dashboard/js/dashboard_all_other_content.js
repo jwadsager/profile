@@ -41,7 +41,7 @@
       // Sort according to filter.
       doc.list.sort(doc.sortByFilter);
 
-      // Get 5 elements according to
+      // Get 5 elements according to.
       $.each(doc.list, function(index, obj) {
         if (obj.title.toLowerCase().indexOf(doc.filter.title.toLowerCase()) >= 0) {
           doc.display.push(obj);
@@ -54,7 +54,6 @@
       });
     }
   };
-
 
   $(document).ready(function($) {
     // Load the template for each entry.

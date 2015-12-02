@@ -41,7 +41,7 @@
       // Sort according to filter.
       dc.comments.sort(dc.sortByFilter);
 
-      // Get 5 elements according to
+      // Get 5 elements according to.
       $.each(dc.comments, function(index, obj) {
         if (obj.subject.toLowerCase().indexOf(dc.filter.title.toLowerCase()) >= 0) {
           dc.display.push(obj);
@@ -58,7 +58,6 @@
       });
     }
   };
-
 
   $(document).ready(function($) {
     // Load the template for each entry.

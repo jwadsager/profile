@@ -45,7 +45,7 @@
       // Sort according to filter.
       dq.questions.sort(dq.sortByFilter);
 
-      // Get 5 elements according to
+      // Get 5 elements according to.
       $.each(dq.questions, function(index, obj) {
         var gt_zero_comments = (obj.coms > 0) ? true : false;
 
@@ -70,14 +70,14 @@
         $('.js-questions-sort-filter').addClass('js-has-answers-removed');
         $('.js-questions-sort-comments').addClass('is-hidden');
         $('.js-questions-sort-alphabetic').addClass('is-last');
-      } else {
+      }
+      else {
         $('.js-questions-sort-filter').removeClass('js-has-answers-removed');
         $('.js-questions-sort-comments').removeClass('is-hidden');
         $('.js-questions-sort-alphabetic').removeClass('is-last');
       }
     }
   };
-
 
   $(document).ready(function($) {
     // Load the template for each entry.
