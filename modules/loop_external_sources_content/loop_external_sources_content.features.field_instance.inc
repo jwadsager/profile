@@ -10,7 +10,7 @@
 function loop_external_sources_content_field_default_field_instances() {
   $field_instances = array();
 
-  // Exported field_instance: 'node-external_sources-field_external_link'
+  // Exported field_instance: 'node-external_sources-field_external_link'.
   $field_instances['node-external_sources-field_external_link'] = array(
     'bundle' => 'external_sources',
     'default_value' => NULL,
@@ -64,7 +64,7 @@ function loop_external_sources_content_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-external_sources-field_keyword'
+  // Exported field_instance: 'node-external_sources-field_keyword'.
   $field_instances['node-external_sources-field_keyword'] = array(
     'bundle' => 'external_sources',
     'default_value' => NULL,
@@ -107,7 +107,7 @@ function loop_external_sources_content_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-external_sources-field_profession'
+  // Exported field_instance: 'node-external_sources-field_profession'.
   $field_instances['node-external_sources-field_profession'] = array(
     'bundle' => 'external_sources',
     'default_value' => NULL,
@@ -144,7 +144,7 @@ function loop_external_sources_content_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-external_sources-field_subject'
+  // Exported field_instance: 'node-external_sources-field_subject'.
   $field_instances['node-external_sources-field_subject'] = array(
     'bundle' => 'external_sources',
     'default_value' => NULL,
