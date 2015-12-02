@@ -10,7 +10,7 @@
 function loop_friend_notification_field_default_field_instances() {
   $field_instances = array();
 
-  // Exported field_instance: 'message-user_sharing_node_reference-field_node'
+  // Exported field_instance: 'message-user_sharing_node_reference-field_node'.
   $field_instances['message-user_sharing_node_reference-field_node'] = array(
     'bundle' => 'user_sharing_node_reference',
     'default_value' => NULL,
@@ -58,7 +58,7 @@ function loop_friend_notification_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'message-user_sharing_node_reference-field_sender'
+  // Exported field_instance: 'message-user_sharing_node_reference-field_sender'.
   $field_instances['message-user_sharing_node_reference-field_sender'] = array(
     'bundle' => 'user_sharing_node_reference',
     'default_value' => NULL,

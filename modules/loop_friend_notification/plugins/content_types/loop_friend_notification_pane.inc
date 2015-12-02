@@ -1,4 +1,8 @@
 <?php
+
+/**
+ * @file
+ */
 $plugin = array(
   'single' => TRUE,  // Just do this one, it is needed.
   'category' => t('Miscellaneous'), // A category to put this under.
