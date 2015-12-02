@@ -10,7 +10,7 @@
 function loop_taxonomy_field_default_field_instances() {
   $field_instances = array();
 
-  // Exported field_instance: 'taxonomy_term-profession-field_subject_reference'
+  // Exported field_instance: 'taxonomy_term-profession-field_subject_reference'.
   $field_instances['taxonomy_term-profession-field_subject_reference'] = array(
     'bundle' => 'profession',
     'default_value' => NULL,
