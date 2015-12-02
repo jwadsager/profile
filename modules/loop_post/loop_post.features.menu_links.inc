@@ -10,7 +10,7 @@
 function loop_post_menu_default_menu_links() {
   $menu_links = array();
 
-  // Exported menu link: main-menu_create-post:node/add/post
+  // Exported menu link: main-menu_create-post:node/add/post.
   $menu_links['main-menu_create-post:node/add/post'] = array(
     'menu_name' => 'main-menu',
     'link_path' => 'node/add/post',
@@ -32,7 +32,6 @@ function loop_post_menu_default_menu_links() {
   // Translatables
   // Included for use with string extractors like potx.
   t('Create post');
-
 
   return $menu_links;
 }
