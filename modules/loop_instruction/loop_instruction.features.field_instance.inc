@@ -10,7 +10,7 @@
 function loop_instruction_field_default_field_instances() {
   $field_instances = array();
 
-  // Exported field_instance: 'comment-comment_node_instruction-comment_body'
+  // Exported field_instance: 'comment-comment_node_instruction-comment_body'.
   $field_instances['comment-comment_node_instruction-comment_body'] = array(
     'bundle' => 'comment_node_instruction',
     'default_value' => NULL,
@@ -43,7 +43,7 @@ function loop_instruction_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-instruction-body'
+  // Exported field_instance: 'node-instruction-body'.
   $field_instances['node-instruction-body'] = array(
     'bundle' => 'instruction',
     'default_value' => NULL,
