@@ -10,7 +10,7 @@
 function loop_user_menu_default_menu_links() {
   $menu_links = array();
 
-  // Exported menu link: main-menu_my-account:user
+  // Exported menu link: main-menu_my-account:user.
   $menu_links['main-menu_my-account:user'] = array(
     'menu_name' => 'main-menu',
     'link_path' => 'user',
@@ -34,7 +34,6 @@ function loop_user_menu_default_menu_links() {
   // Translatables
   // Included for use with string extractors like potx.
   t('My account');
-
 
   return $menu_links;
 }

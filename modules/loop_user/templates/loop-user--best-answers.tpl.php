@@ -1,7 +1,7 @@
 <?php
 /**
  * @file loop-user-best-answers.tpl.php
- * Best answers block for user account
+ * Best answers block for user account.
  *
  * Available variables:
  * - $answers_count
