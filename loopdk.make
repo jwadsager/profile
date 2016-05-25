@@ -254,6 +254,9 @@ projects[views_flag_refresh][version] = "1.3"
 projects[wysiwyg][subdir] = "contrib"
 projects[wysiwyg][version] = "2.x-dev"
 
+projects[translation_helpers][subdir] = "contrib"
+projects[translation_helpers][version] = 1.0
+
 ; Libraries
 libraries[ckeditor][download][type] = "get"
 libraries[ckeditor][download][url] = "http://download.cksource.com/CKEditor/CKEditor/CKEditor%204.5.3/ckeditor_4.5.3_full.zip"
